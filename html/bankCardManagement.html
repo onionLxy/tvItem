@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bankCardManagement.css">
+    <link rel="stylesheet" href="../lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <title>银行卡管理</title>
+    <script src="../lib/jquery-1.12.4.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../lib/flexible/flexible.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../lib/artTemplate/template-web.js"></script>
+    <script src="../js/bankCardManagement.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="bankCard">
+            <!-- <div class="content">
+                <div class="white_box">
+                    <img class='bank_logo' src="../images/icon/@2x/招商@2x.png" alt="">
+                </div>
+                <div class="bank">
+                    <span>招商银行 (信用卡)</span>
+                    <span>6226 **** **** 2339</span>
+                </div>
+                <img class='right_arrow'  src="../images/icon/@2x/删除@2x.png" alt="">
+            </div> -->
+
+        </div>
+        <div class="details">
+            <div class="details_info">
+                <span>查看限额</span>
+                <div class="right fr viewLimit"></div>
+            </div>
+            <div class="details_info details_info_limit">
+                <span>修改限额</span>
+                <div class="right fr modificationLimit"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 模态框 -->
+    <div class="div-container" id="div-container" style="display:none;">
+        <div class="div-child-container">
+            <div class="div-child">
+                <p class="tips">提示</p>
+                <p class="info">您确定要删除该银行卡吗？</p>
+                <div class="my-btn">
+                    <button id="cancleBtn">取消</button>
+                    <button id="confrim" onclick="confrim()">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 渲染页面1 -->
+    <script type="text/html" id="bankCard_details"> 
+    {{each tokens v i}}
+    <div class="content">
+        <div class="white_box">
+            <img class='bank_logo' src="../images/icon/@2x/招商@2x.png" alt="">
+        </div>
+        <div class="bank">
+            <span>{{tokens[i].accName}} (信用卡)</span>
+            <span class='num_hide'>{{tokens[i].accNo}}</span>
+        </div>
+        <img class='right_arrow'  src="../images/icon/@2x/删除@2x.png" alt="">
+    </div>
+    {{/each}}
+    
+</body>
+
+</html>

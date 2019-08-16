@@ -1,0 +1,147 @@
+@charset "UTF-8";
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  background-color: #f5f5f5;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input[type="text"],
+input[type="search"],
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+img {
+  display: block;
+  width: 100%;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  min-width: 8.53333333rem;
+  max-width: 17.06666667rem;
+  margin: 0 auto;
+  position: relative;
+}
+.main .header {
+  width: 100%;
+  height: 1.33333333rem;
+  background-color: #fff;
+  padding: 0 0.48rem;
+  position: relative;
+}
+.main .header .top_name {
+  display: block;
+  text-align: center;
+  line-height: 1.33333333rem;
+  font-size: 0.48rem;
+  position: relative;
+  font-family: 'PingFangSC-Semibold';
+  font-weight: 700;
+}
+.main .header .back_black {
+  width: 0.64rem;
+  height: 0.64rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main .limit {
+  width: 9.04rem;
+  height: 1.44rem;
+  border: 0.02666667rem solid #ccc;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  margin: 0.53333333rem auto 0;
+  padding: 0 0.26666667rem;
+  line-height: 1.44rem;
+}
+.main .limit .limit_name {
+  font-size: 0.42666667rem;
+}
+.main .limit .limit_number {
+  font-size: 0.42666667rem;
+  color: #666;
+}
+.main .details {
+  overflow: hidden;
+  width: 9.04rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  margin: 0.48rem auto;
+  padding: 0 0.26666667rem;
+  justify-content: space-between;
+}
+.main .details .details_info {
+  width: 100%;
+  height: 1.44rem;
+  border-bottom: 1px solid #ccc;
+}
+.main .details .details_info .name {
+  width: 30% ;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.42666667rem;
+  color: #000;
+  margin-right: 4.8rem;
+}
+.main .details .details_info .model {
+  width: 70% ;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.42666667rem;
+  color: #000;
+}
+.main .back {
+  width: 3.04rem;
+  height: 0.96rem;
+  background-color: #ED171F;
+  border-radius: 0.26666667rem;
+  font-size: 0.42666667rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main .back a {
+  color: #fff;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/chooseBankCard.css">
+    <link rel="stylesheet" href="../lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <title>选择银行卡</title>
+    <script src="../lib/flexible/flexible.js"></script>
+    <script src="../lib/jquery-1.12.4.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../lib/artTemplate/template-web.js"></script>
+    <script src="../js/chooseBankCard.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <p class='choose'>请选择银行卡</p>
+        <div class="bankCard">
+            <!-- 模板渲染1 -->
+            <!-- <div class="content">
+                <img class='' src="../images/icon/@2x/招商@2x.png" alt="">
+                <div class="bank">
+                    <span>招商银行</span>
+                    <span>6226 **** **** 2339</span>
+                </div>
+                <input type="checkbox" class="check">
+            </div> -->
+
+        </div>
+        <button class='next' type="button" class="mui-btn mui-btn-danger">下一步</button>
+    </div>
+    <!-- 模板渲染1 -->
+    <script type='text/html' id='bankCardNum'>
+    {{each cards v i}}
+        <div class="content">
+            <img class='' src="../images/icon/@2x/招商@2x.png" alt="">
+            <div class="bank">
+                <span>招商银行</span>
+                <!-- {{cards[i].bankName}} -->
+                <span class='num_hide'>{{cards[i].cardNum}}</span>
+            </div>
+            <input type="checkbox" class="check">
+        </div>
+    {{/each}}
+    </script>
+</body>
+
+</html>

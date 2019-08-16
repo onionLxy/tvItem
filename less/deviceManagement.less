@@ -1,0 +1,64 @@
+// 导入 base, 在 normalize 基础上进行定制, 完成对一些样式的重置
+@import 'base';
+
+// 使用的 flexible 完成的rem适配
+// 基准值 = 设计图尺寸 / 10
+@desgin: 375;
+@base: 37.5rem;
+body,html {
+    width: 100%;
+    height: 100%;
+}
+.main {
+    width:100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    min-width: 320/@base;
+    max-width: 640/@base;
+    margin:0 auto;
+    position: relative;
+    padding: 20/@base 18/@base;
+    
+    .details {
+        overflow: hidden;
+        width: 339/@base;
+        // border: 1/@base solid #ccc;
+        background-color: #fff;
+        border-radius: 15/@base;
+        margin: 18/@base auto;
+        padding:0 14/@base;
+        .details_info {
+            width: 100%;
+            height: 54/@base;
+            border-bottom: 1/@base solid #ccc;
+            display: flex;
+            .tv {
+                width: 24/@base;
+                height: 24/@base;
+                margin:auto auto;
+                
+            }
+            span {
+                font-size: 14/@base;
+                color: #000;
+                flex: 2;
+                height:54/@base;
+                line-height: 54/@base;
+                margin-left: 15/@base;
+                font-family: 'PingFangSC-Medium';
+            }
+            .right {
+                background: url(../images//icon/@2x/icon\ _\ func_right_arrow_black@2x.png) no-repeat;
+                width:12/@base;
+                height: 12/@base;
+                background-size: cover;
+                margin:auto auto;
+                
+            }
+        }
+        .details_info:last-child {
+            border-bottom: none;
+        }
+    }
+    
+}

@@ -1,0 +1,49 @@
+// 导入 base, 在 normalize 基础上进行定制, 完成对一些样式的重置
+@import 'base';
+
+// 使用的 flexible 完成的rem适配
+// 基准值 = 设计图尺寸 / 10
+@desgin: 375;
+@base: 37.5rem;
+body,html {
+    width: 100%;
+    height: 100%;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    .loading {
+        width:180/@base;
+        height: 180/@base;
+        position: relative;
+        margin-bottom: 100/@base;
+        img {
+            width:180/@base;
+            height: 180/@base;
+            background-position: cover;
+            position: absolute;
+            left: 50%;
+            top: 50%;           
+        }
+    }  
+    .info {
+        width: 100%;
+        height: 40/@base;
+        line-height: 40/@base;
+        font-size: 18/@base!important;
+        text-align: center;
+    }
+    .btn {
+        width:80/@base; 
+        height: 40/@base;
+        display: block;
+        background-color: rgb(238, 27, 27);
+        margin: 0 auto;
+        margin-top: 40/@base;
+        font-size: 16/@base;
+        color:#fff;
+        text-align: center;
+        border-radius: 6/@base;
+    }
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/billDetails.css">
+    <link rel="stylesheet" href="../lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <title>账单详情</title>
+    <script src="../lib/flexible/flexible.js"></script>
+    <script src="../lib/jquery-1.12.4.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../lib/artTemplate/template-web.js"></script>
+    <script src="../js/billDetails.js"></script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="details">
+            <!-- <div class="details_info">
+                <span class="name">设备名称</span>
+                <span class="model">上海电影网公司</span>
+            </div> -->
+            
+        </div>
+    </div>
+
+    <!-- 模板引擎渲染1 -->
+    <script type="text/html" id="billDetails"> 
+       
+            <div class="details_info">
+                <span class="name">商户名称</span>
+                <span class="model">{{order.merchantName}}</span>
+            </div>
+            <div class="details_info">
+                <span class="name">支付卡号</span>
+                <span class="model">{{order.cardNo}}</span>
+            </div>
+            <div class="details_info">
+                <span class="name">交易时间</span>
+                <span class="model">{{order.transTm}}</span>
+            </div>
+            <div class="details_info">
+                <span class="name">交易分类</span>
+                <span class="model">{{order.tradeTp}}</span>
+            </div>
+            <div class="details_info">
+                <span class="name">支出金额</span>
+                <span class="model">{{order.amt}}元</span>
+            </div>
+            <div class="details_info">
+                <span class="name">订单号</span>
+                <span class="model">{{order.orderNo}}</span>
+            </div>
+      
+    </script>
+</body>
+
+</html>

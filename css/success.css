@@ -1,0 +1,10 @@
+form {
+  position: relative;
+}
+form .mui-btn-danger {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50%;
+  width: ;
+}

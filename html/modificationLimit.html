@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/modificationLimit.css">
+    <link rel="stylesheet" href="../lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <title>修改限额</title>
+    <script src="../lib/flexible/flexible.js"></script>
+    <script src="../lib/jquery-1.12.4.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../js/modificationLimit.js"></script>
+    <script src="../lib/artTemplate/template-web.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="limit">
+            <!-- 模板渲染1 -->
+            <!-- <span class="limit_name fl">卡号</span>
+            <span class="limit_number fr">6226 **** **** 2323</span> -->
+        </div>
+        <div class="details">
+            <div class="day_limit">
+                <span class="">单日限额</span>
+                <input class="singleDay" type="text" placeholder="请输入单日限额（元）">
+            </div>
+            <div class="day_limit">
+                <span class="">单笔限额</span>
+                <input class="single" type="text" placeholder="请输入单笔限额（元）">
+            </div>
+            <div class="back_btn">
+                    <button type="button" class="mui-btn back ">返回</button>
+                    <button type="button" class="mui-btn mui-btn-danger">修改</button>
+            </div>
+        </div>
+    </div>
+    <!-- 模板渲染 -->
+    <script type="text/html" id="bankCard_limit"> 
+    {{each tokens v i}}
+    <span class="limit_name fl">卡号</span>
+    <span class="limit_number fr">{{tokens[i].accNo}}</span>
+    {{/each}}
+</body>
+
+</html>

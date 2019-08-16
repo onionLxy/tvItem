@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/deviceDetaill.css">
+    <link rel="stylesheet" href="../lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <title>设备详情</title>
+    <script src="../lib/flexible/flexible.js"></script>
+    <script src="../lib/jquery-1.12.4.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../lib/artTemplate/template-web.js"></script>
+    <script src="../js/deviceDetails.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="details">
+            <p class="tv_name"></p>
+            <div class="center">
+                <div class="mangement_card fl">
+                    <img src="../images//icon/@2x/银行卡管理@2x.png" alt="">
+                    <span>银行卡管理</span>
+                </div>
+                <div class="mangement_bill fl">
+                    <img src="../images//icon/@2x//账单管理@2x.png" alt="">
+                    <span>账单管理</span>
+                </div>
+                <div class="mangement_info fl">
+                    <img src="../images//icon/@2x//账单管理@2x.png" alt="">
+                    <span>信息修改</span>
+                </div>
+                <div class="mangement_bank fl">
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- 点击信息修改弹出模态框 -->
+     <div class="div-container" id="div-container" style="display:none;">
+        <div class="div-child-container">
+            <div class="div-child">
+                <span class="tips">设备名称</span>
+                <input type="text" class="info" placeholder="请输入设备名称">
+                <div class="my-btn">
+                    <button id="cancleBtn">取消</button>
+                    <button id="confrim" onclick="confrim()">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

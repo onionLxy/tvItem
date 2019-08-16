@@ -1,0 +1,187 @@
+@charset "UTF-8";
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  background-color: #f5f5f5;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input[type="text"],
+input[type="search"],
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+img {
+  display: block;
+  width: 100%;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  min-width: 8.53333333rem;
+  max-width: 17.06666667rem;
+  margin: 0 auto!important;
+  padding-top: 0.8rem;
+  position: relative;
+}
+.main .info {
+  font-size: 0.37333333rem;
+  color: #7DA4C3;
+  background-color: #E8F1FA;
+  height: 1.6rem;
+  line-height: 0.66666667rem;
+  padding: 0.13333333rem 0.26666667rem;
+  margin-bottom: 0;
+}
+.main .card {
+  width: 100%;
+  height: 1.6rem;
+  padding: 0.26666667rem 0rem;
+  position: relative;
+  margin: auto auto;
+}
+.main .card img {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-position: center center;
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translate(10%, -50%);
+}
+.main .card .bank_name {
+  height: 0.8rem;
+  width: 40%;
+  line-height: 0.8rem;
+  font-size: 0.42666667rem;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 19%;
+  transform: translate(0, -50%);
+}
+.main .card .num {
+  width: 40%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-weight: 700;
+  font-size: 0.42666667rem;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(0, -50%);
+}
+.main .details {
+  overflow: hidden;
+  width: 9.04rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  margin: 0.13333333rem auto 0.48rem;
+  padding: 0 0.26666667rem;
+}
+.main .details .details_info {
+  width: 100%;
+  height: 1.44rem;
+  border-bottom: 1px solid #ccc;
+}
+.main .details .details_info .name {
+  width: 30% ;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.42666667rem;
+  color: #000;
+  margin-right: 0.8rem;
+}
+.main .details .details_info .model {
+  width: 70% ;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.42666667rem;
+  color: #9E9E9E;
+  margin-right: 35%;
+}
+.main .details .details_info .lt {
+  width: 70% ;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.42666667rem;
+  color: #9E9E9E;
+}
+.main .tel {
+  width: 90%;
+  height: 1.44rem;
+  border: 1px solid #ccc;
+  padding: 0 0.26666667rem;
+  margin: auto auto;
+  border-radius: 0.26666667rem;
+  background-color: #fff;
+}
+.main .tel .tel_name {
+  width: 30% ;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.42666667rem;
+  color: #000;
+  margin-right: 0.8rem;
+}
+.main .tel .tel_num {
+  width: 70% ;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.42666667rem;
+  color: #9E9E9E;
+  margin-right: 35%;
+}
+.main .btn {
+  width: 2.13333333rem;
+  height: 1.06666667rem;
+  display: block;
+  background-color: #ee1b1b;
+  margin: 0 auto;
+  margin-top: 1.06666667rem;
+  font-size: 0.42666667rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.16rem;
+}

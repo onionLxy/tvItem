@@ -1,0 +1,93 @@
+// 导入 base, 在 normalize 基础上进行定制, 完成对一些样式的重置
+@import 'base';
+
+// 使用的 flexible 完成的rem适配
+// 基准值 = 设计图尺寸 / 10
+@desgin: 375;
+@base: 37.5rem;
+body,html {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width:100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    min-width: 320/@base;
+    max-width: 640/@base;
+    margin:0 auto;
+    position: relative;
+    padding-top:20/@base;
+    .bankCard {
+        width: 339/@base;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin:0 auto 0;
+        .content {
+            width: 339/@base;
+            height: 66/@base;
+            border-radius: 13/@base;
+            padding:0 20/@base; 
+            display: flex;  
+            margin-bottom: 20/@base;
+            
+            .white_box {
+                width: 32/@base;
+                height: 32/@base;
+                background-color: #fff;
+                margin: auto auto;
+                position: relative;
+                border-radius: 50%;
+                .bank_logo {
+                    display: block;
+                    width: 24/@base;
+                    height: 24/@base;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+
+                        
+                }
+            }        
+            
+            .bank {
+                display: flex;
+                flex-direction: column;
+                flex: 2;
+                padding:0 15/@base;
+                margin: auto auto;
+                span:nth-child(1) {
+                    font-size: 14/@base;
+                    color:#fff;
+                    line-height: 20/@base; 
+                    
+                }
+                span:nth-child(2) {
+                    font-size: 14/@base;
+                    color:#fff;  
+                    line-height: 20/@base;
+                }
+
+            }
+            .right_arrow {
+                width:12/@base;
+                height:12/@base; ;
+                margin: auto auto;
+            }
+        }
+        .content:nth-child(2n) {
+            background-color: #1570BF;
+            background:-webkit-linear-gradient(left,#1E8ED5,#0F5EB2);
+        }
+        .content:nth-child(2n+1) {
+            background-color: #D90326;
+            background:-webkit-linear-gradient(left,#E9053A,#D3021F);
+
+        }
+
+    }
+}
+

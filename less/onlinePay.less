@@ -1,0 +1,152 @@
+// 导入 base, 在 normalize 基础上进行定制, 完成对一些样式的重置
+@import 'base';
+
+// 使用的 flexible 完成的rem适配
+// 基准值 = 设计图尺寸 / 10
+@desgin: 375;
+@base: 37.5rem;
+body,html {
+    width: 100%;
+    height: 100%;
+}
+.main {
+    width:100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    min-width: 320/@base;
+    max-width: 640/@base;
+    margin:0 auto!important;
+    position: relative;
+    padding-top: 30/@base;
+    position: relative;
+    .info {
+        font-size: 14/@base;
+        color:#7DA4C3;
+        background-color:#E8F1FA;
+        height: 60/@base;
+        line-height: 25/@base;
+        padding:5/@base 10/@base;
+        margin-bottom:0;
+    }
+    .card {
+        width: 100%;
+        height: 60/@base;
+        padding:10/@base 0/@base;
+        position: relative;
+        margin:auto auto;
+        img {
+            display: block;
+            width: 30/@base;
+            height: 30/@base;
+            background-position: center center;
+            position: absolute;
+            top: 50%;
+            left:7%;
+            transform: translate(10%,-50%);
+            
+        }
+        .bank_name {
+            height: 30/@base;
+            width: 40%;
+            line-height: 30/@base;
+            font-size: 16/@base;
+            font-weight: 700;
+            position: absolute;
+            top: 50%;
+            left:19%;
+            transform: translate(0,-50%);
+            
+
+        }
+        .num {
+            width: 40%;
+            height: 30/@base;
+            line-height: 30/@base;
+            font-weight: 700;
+            font-size: 16/@base;
+            position: absolute;
+            top: 50%;
+            left:55%;
+            transform: translate(0,-50%);
+            
+        }
+    }
+    .details {
+        overflow: hidden;
+        width: 339/@base;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        border-radius: 15/@base;
+        margin: 5/@base auto 18/@base;
+        padding:0 10/@base;
+        .details_info {
+            width: 100%;
+            height: 54/@base;
+            border-bottom: 1px solid #ccc;
+            
+            .name {
+                width:30% ;
+                height: 54/@base;
+                line-height: 54/@base;
+                font-size: 16/@base;
+                color:#000;
+                margin-right: 30/@base;
+            }
+            .model {  
+                width:70% ;            
+                height: 54/@base;
+                line-height: 54/@base;
+                font-size: 16/@base;
+                color:#9E9E9E;
+                margin-right: 35%; 
+            }
+            .lt {
+                width:70% ;            
+                height: 54/@base;
+                line-height: 54/@base;
+                font-size: 16/@base;
+                color:#9E9E9E;
+            }
+        } 
+        
+    }
+    .tel {
+        width:90%;
+        height: 54/@base;
+        border: 1px solid #ccc;
+        padding:0 10/@base;
+        margin:auto auto;
+        border-radius: 10/@base;
+        background-color: #fff;
+        .tel_name {
+            width:30% ;
+            height: 54/@base;
+            line-height: 54/@base;
+            font-size: 16/@base;
+            color:#000;
+            margin-right: 30/@base;
+        }
+        .tel_num {  
+            width:70% ;            
+            height: 54/@base;
+            line-height: 54/@base;
+            font-size: 16/@base;
+            color:#9E9E9E;
+            margin-right: 35%; 
+        }
+        
+    } 
+    .btn {
+        width:80/@base; 
+        height: 40/@base;
+        display: block;
+        background-color: rgb(238, 27, 27);
+        margin: 0 auto;
+        margin-top: 40/@base;
+        font-size: 16/@base;
+        color:#fff;
+        text-align: center;
+        border-radius: 6/@base;
+    }
+    
+}

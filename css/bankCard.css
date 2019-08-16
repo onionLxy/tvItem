@@ -1,0 +1,127 @@
+@charset "UTF-8";
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  background-color: #f5f5f5;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input[type="text"],
+input[type="search"],
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+img {
+  display: block;
+  width: 100%;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  min-width: 8.53333333rem;
+  max-width: 17.06666667rem;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 0.53333333rem;
+}
+.main .bankCard {
+  width: 9.04rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0;
+}
+.main .bankCard .content {
+  width: 9.04rem;
+  height: 1.76rem;
+  border-radius: 0.34666667rem;
+  padding: 0 0.53333333rem;
+  display: flex;
+  margin-bottom: 0.53333333rem;
+}
+.main .bankCard .content .white_box {
+  width: 0.85333333rem;
+  height: 0.85333333rem;
+  background-color: #fff;
+  margin: auto auto;
+  position: relative;
+  border-radius: 50%;
+}
+.main .bankCard .content .white_box .bank_logo {
+  display: block;
+  width: 0.64rem;
+  height: 0.64rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main .bankCard .content .bank {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  padding: 0 0.4rem;
+  margin: auto auto;
+}
+.main .bankCard .content .bank span:nth-child(1) {
+  font-size: 0.37333333rem;
+  color: #fff;
+  line-height: 0.53333333rem;
+}
+.main .bankCard .content .bank span:nth-child(2) {
+  font-size: 0.37333333rem;
+  color: #fff;
+  line-height: 0.53333333rem;
+}
+.main .bankCard .content .right_arrow {
+  width: 0.32rem;
+  height: 0.32rem;
+  margin: auto auto;
+}
+.main .bankCard .content:nth-child(2n) {
+  background-color: #1570BF;
+  background: -webkit-linear-gradient(left, #1e8ed5, #0f5eb2);
+}
+.main .bankCard .content:nth-child(2n+1) {
+  background-color: #D90326;
+  background: -webkit-linear-gradient(left, #e9053a, #d3021f);
+}

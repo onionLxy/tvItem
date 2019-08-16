@@ -1,0 +1,210 @@
+@charset "UTF-8";
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  background-color: #f5f5f5;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input[type="text"],
+input[type="search"],
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+img {
+  display: block;
+  width: 100%;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  min-width: 8.53333333rem;
+  max-width: 17.06666667rem;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 0.66666667rem;
+}
+.main .details {
+  overflow: hidden;
+  width: 9.04rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  margin: 0 auto;
+  padding: 0 0.48rem;
+}
+.main .details .tv_name {
+  font-size: 0.42666667rem;
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
+  border-bottom: 0.02666667rem solid #eeebeb;
+  color: #333333;
+  margin-bottom: 0;
+  margin-left: 0.4rem;
+  font-family: 'PingFangSC-Medium';
+}
+.main .details .center {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0.58666667rem 0;
+}
+.main .details .center .mangement_card {
+  width: 45%;
+  height: 2.66666667rem;
+  text-align: center;
+  float: left;
+}
+.main .details .center .mangement_card img {
+  margin: 0 auto 0.26666667rem;
+  width: 0.96rem;
+  height: 0.96rem;
+}
+.main .details .center .mangement_card span {
+  font-size: 0.42666667rem;
+  color: #333;
+  font-family: 'PingFangSC-Medium';
+}
+.main .details .center .mangement_bill {
+  width: 45%;
+  height: 2.66666667rem;
+  text-align: center;
+  float: left;
+}
+.main .details .center .mangement_bill img {
+  margin: 0 auto 0.26666667rem;
+  width: 0.96rem;
+  height: 0.96rem;
+}
+.main .details .center .mangement_bill span {
+  font-size: 0.42666667rem;
+  text-align: center;
+  color: #333;
+  font-family: 'PingFangSC-Medium';
+}
+.main .details .center .mangement_info {
+  width: 45%;
+  height: 2.66666667rem;
+  text-align: center;
+  float: left;
+}
+.main .details .center .mangement_info img {
+  margin: 0 auto 0.26666667rem;
+  width: 0.96rem;
+  height: 0.96rem;
+}
+.main .details .center .mangement_info span {
+  font-size: 0.42666667rem;
+  color: #333;
+  font-family: 'PingFangSC-Medium';
+}
+.main .details .center .mangement_bank {
+  width: 45%;
+  height: 2.66666667rem;
+  background-color: #fff;
+  float: left;
+}
+.div-container {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 199;
+  background: rgba(0, 0, 0, 0.5) !important;
+  /* 兼容ie几不知道，好像ie5 */
+  background: #000;
+  filter: alpha(opacity=60);
+}
+/*设置div-child的父元素主要是将要此元素的父元素透明特性继承过来，故div-child不会半透明，而是不透明，解决了父元素透明，子元素也透明的bug */
+.div-child-container {
+  position: relative;
+  width: 8.56rem;
+  height: 4.8rem;
+  margin: auto;
+  top: 28%;
+  z-index: 299;
+  /*z-index要放在父元素之上 */
+}
+.div-child-container .div-child {
+  width: 8.56rem;
+  height: 4.8rem;
+  margin: auto ;
+  background-color: #fff;
+  z-index: 999;
+  /*z-index要放在父元素之上 */
+  text-align: center;
+  border-radius: 0.21333333rem;
+  padding-top: 1.06666667rem;
+}
+.div-child-container .div-child .tips {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  font-size: 0.48rem;
+  color: #000;
+  font-weight: 700;
+}
+.div-child-container .div-child .info {
+  width: 50%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.42666667rem;
+  color: #666;
+}
+.div-child-container .div-child .my-btn {
+  margin-top: 0.66666667rem;
+}
+.div-child-container .div-child .my-btn button {
+  width: 2.66666667rem;
+  height: 1.06666667rem;
+  font-size: 0.48rem;
+  border-radius: 0.26666667rem;
+}
+.div-child-container .div-child .my-btn button:nth-child(1) {
+  color: red;
+  background-color: #fff;
+  margin-right: 0.8rem;
+}
+.div-child-container .div-child .my-btn button:nth-child(2) {
+  color: #fff;
+  background-color: red;
+}

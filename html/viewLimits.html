@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/viewLimits.css">
+    <link rel="stylesheet" href="../lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <title>查看限额</title>
+    <script src="../lib/flexible/flexible.js"></script>
+    <script src="../lib/jquery-1.12.4.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../lib/artTemplate/template-web.js"></script>
+    <script src="../js/viewLimits.js"></script>
+</head>
+<body>
+    <div class="main">
+        
+        <div class='art'>
+            <!-- 使用模板引擎渲染1 -->
+            <!-- <div class="limit">
+                <span class="limit_name fl">卡号</span>
+                <span class="limit_number fr">6226 **** **** 2323</span>
+            </div>
+            <div class="details">
+                <div class="details_info">
+                    <span class="name">单日限额</span>
+                    <span class="model ">1000</span>
+                </div>
+                <div class="details_info">
+                    <span class="name">单笔限额</span>
+                    <span class="model">5000</span>
+                </div>
+            </div> -->
+        </div>
+        <!-- <button class='back' type="button" class="mui-btn mui-btn-danger"><a href="">返 回</a></button> -->
+        
+    </div>
+    <!-- 模板引擎渲染1 -->
+    <script type="text/html" id="cardLimit">    
+
+            <div class="limit">
+                <span class="limit_name fl">卡号</span>
+                <span class="limit_number fr">{{tokens[0].accNo}}</span>
+            </div>
+            <div class="details">
+                <div class="details_info">
+                    <span class="name">单日限额</span>
+                    <span class="model ">{{tokens[0].singleDayLimit}}</span>
+                </div>
+                <div class="details_info">
+                    <span class="name">单笔限额</span>
+                    <span class="model">{{tokens[0].singleQuota}}</span>
+                </div>
+            </div>
+    </script>
+    
+</body>
+
+</html>

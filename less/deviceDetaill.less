@@ -1,172 +1,168 @@
 // 导入 base, 在 normalize 基础上进行定制, 完成对一些样式的重置
-@import 'base';
+@import "base";
 
 // 使用的 flexible 完成的rem适配
 // 基准值 = 设计图尺寸 / 10
 @desgin: 375;
 @base: 37.5rem;
-body,html {
-    width: 100%;
-    height: 100%;
+body,
+html {
+  width: 100%;
+  height: 100%;
 }
 .main {
-    width:100%;
-    height: 100%;
-    background-color: #f5f5f5;
-    min-width: 320/@base;
-    max-width: 640/@base;
-    margin:0 auto;
-    position: relative;
-    padding-top: 25/@base;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  min-width: 320 / @base;
+  max-width: 640 / @base;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 25 / @base;
 
-    .details {        
-        overflow: hidden;
-        width: 339/@base;
-        border: 1px solid #ccc;
-        background-color: #fff;
-        border-radius: 15/@base;
-        margin: 0 auto;
-        padding:0 18/@base;
-        .tv_name {
-            font-size: 16/@base;
-            height: 50/@base;
-            line-height: 50/@base;
-            border-bottom: 1/@base solid rgb(238, 235, 235);
-            color:#333333;
-            margin-bottom: 0;
-            margin-left: 15/@base;
-            font-family: 'PingFangSC-Medium';
-
-        }
-        .center {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap:wrap;
-            padding:22/@base 0;
-            .mangement_card {
-                width:45%;
-                height:100/@base;
-                text-align: center;
-                float: left;
-                img {
-                    margin: 0 auto 10/@base;
-                    width: 36/@base;
-                    height: 36/@base;
-                }
-                span {
-                    font-size: 16/@base;
-                    color: #333;
-                    font-family: 'PingFangSC-Medium';
-                }
-                
-            }
-            .mangement_bill {
-                width: 45%;
-                height: 100/@base;
-                text-align: center;
-                float: left;
-                img {
-                    margin: 0 auto 10/@base;
-                    width: 36/@base;
-                    height: 36/@base;
-                }
-                span {
-                    font-size: 16/@base;
-                    text-align: center;
-                    color: #333;
-                    font-family: 'PingFangSC-Medium';
-                }
-            }
-            .mangement_info {
-                width:45%;
-                height:100/@base;
-                text-align: center;
-                float: left;
-                img {
-                    margin: 0 auto 10/@base;
-                    width: 36/@base;
-                    height: 36/@base;
-                }
-                span {
-                    font-size: 16/@base;
-                    color: #333;
-                    font-family: 'PingFangSC-Medium';
-                }
-            }
-            .mangement_bank {
-                width:45%;
-                height:100/@base;
-                background-color: #fff;
-                float: left;
-            }
-        }
+  .details {
+    overflow: hidden;
+    width: 339 / @base;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 15 / @base;
+    margin: 0 auto;
+    padding: 0 18 / @base;
+    .tv_name {
+      font-size: 16 / @base;
+      height: 50 / @base;
+      line-height: 50 / @base;
+      border-bottom: 1 / @base solid rgb(238, 235, 235);
+      color: #333333;
+      margin-bottom: 0;
+      margin-left: 15 / @base;
+      font-family: "PingFangSC-Medium";
     }
+    .center {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 22 / @base 0;
+      .mangement_card {
+        width: 45%;
+        height: 100 / @base;
+        text-align: center;
+        float: left;
+        img {
+          margin: 0 auto 10 / @base;
+          width: 36 / @base;
+          height: 36 / @base;
+        }
+        span {
+          font-size: 16 / @base;
+          color: #333;
+          font-family: "PingFangSC-Medium";
+        }
+      }
+      .mangement_bill {
+        width: 45%;
+        height: 100 / @base;
+        text-align: center;
+        float: left;
+        img {
+          margin: 0 auto 10 / @base;
+          width: 36 / @base;
+          height: 36 / @base;
+        }
+        span {
+          font-size: 16 / @base;
+          text-align: center;
+          color: #333;
+          font-family: "PingFangSC-Medium";
+        }
+      }
+      .mangement_info {
+        width: 45%;
+        height: 100 / @base;
+        text-align: center;
+        float: left;
+        img {
+          margin: 0 auto 10 / @base;
+          width: 36 / @base;
+          height: 36 / @base;
+        }
+        span {
+          font-size: 16 / @base;
+          color: #333;
+          font-family: "PingFangSC-Medium";
+        }
+      }
+      .mangement_bank {
+        width: 45%;
+        height: 100 / @base;
+        background-color: #fff;
+        float: left;
+      }
+    }
+  }
 }
 
 // 模态框
-.div-container{
-    position: fixed;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-    z-index:199;
-    background: rgba(0,0,0,0.5) !important;/* 兼容ie几不知道，好像ie5 */
-    background:#000;
-    filter:Alpha(opacity=60);
+.div-container {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 199;
+  background: rgba(0, 0, 0, 0.5) !important; /* 兼容ie几不知道，好像ie5 */
+  background: #000;
+  filter: Alpha(opacity=60);
 }
 /*设置div-child的父元素主要是将要此元素的父元素透明特性继承过来，故div-child不会半透明，而是不透明，解决了父元素透明，子元素也透明的bug */
-.div-child-container{
-    position: relative;
-    width: 321/@base;
-    height: 180/@base;
+.div-child-container {
+  position: relative;
+  width: 321 / @base;
+  height: 180 / @base;
+  margin: auto;
+  top: 28%;
+  z-index: 299; /*z-index要放在父元素之上 */
+  .div-child {
+    width: 321 / @base;
+    height: 180 / @base;
     margin: auto;
-    top: 28%;
-    z-index: 299; /*z-index要放在父元素之上 */
-    .div-child{
-        width: 321/@base;
-        height: 180/@base;
-        margin: auto ;
-        background-color: #fff;
-        z-index: 999; /*z-index要放在父元素之上 */
-        text-align: center;
-        border-radius: 8/@base;
-        padding-top: 40/@base;
-        .tips{
-            height: 30/@base;
-            line-height: 30/@base;
-            text-align: center;
-            font-size: 18/@base;
-            color: #000;
-            font-weight: 700;
-        }
-        .info {
-            width:50%;
-            height: 30/@base;
-            line-height: 30/@base;
-            // text-align: center;
-            font-size: 16/@base;
-            color: #666;
-        }
-        .my-btn{
-            margin-top: 25/@base;
-            button{
-                width: 100/@base;
-                height: 40/@base;
-                font-size: 18/@base;
-                border-radius: 10/@base;
-            }
-            button:nth-child(1) {
-                color:red;
-                background-color: #fff;
-                margin-right: 30/@base;
-                
-            }
-            button:nth-child(2) {
-                color:#fff;
-                background-color: red;
-            }
-            
-        }
+    background-color: #fff;
+    z-index: 999; /*z-index要放在父元素之上 */
+    text-align: center;
+    border-radius: 8 / @base;
+    padding-top: 40 / @base;
+    .tips {
+      height: 30 / @base;
+      line-height: 30 / @base;
+      text-align: center;
+      font-size: 18 / @base;
+      color: #000;
+      font-weight: 700;
     }
-    
+    .info {
+      width: 50%;
+      height: 35 / @base;
+      line-height: 35 / @base;
+      // text-align: center;
+      font-size: 16 / @base;
+      color: #666;
+    }
+    .my-btn {
+      margin-top: 25 / @base;
+      button {
+        width: 100 / @base;
+        height: 40 / @base;
+        font-size: 18 / @base;
+        border-radius: 10 / @base;
+      }
+      button:nth-child(1) {
+        color: red;
+        background-color: #fff;
+        margin-right: 30 / @base;
+      }
+      button:nth-child(2) {
+        color: #fff;
+        background-color: red;
+      }
+    }
+  }
 }

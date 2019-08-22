@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
@@ -11,13 +12,6 @@
     <link rel="stylesheet" href="../lib/fa/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../lib/mui/css/mui.min.css" />
     <title>账单列表</title>
-    <script src="../lib/flexible/flexible.js"></script>
-    <script src="../lib/jquery-1.12.4.js"></script>
-    <script src="../js/common.js"></script>
-    <script src="../lib/bootstrap/js/bootstrap.js"></script>
-    <script src="../lib/artTemplate/template-web.js"></script>
-
-    <script src="../js/billList.js"></script>
   </head>
 
   <body>
@@ -36,26 +30,32 @@
             </div>
           </div>
           <div class="rightArrow"></div>
-        </div> -->           
+        </div> -->
       </div>
     </div>
+    <script src="../lib/flexible/flexible.js"></script>
+    <script src="../lib/jquery-1.12.4.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../lib/artTemplate/template-web.js"></script>
+    <script src="../js/billList.js"></script>
     <!-- 渲染页面1 -->
     <script type="text/html" id="billList">
-    {{each orders v i}}
-    <div class="bill_list" data-order='{{orders[0].order[i].orderNo}}' data-card='{{orders[0].cardNo}}' data-merchant='{{orders[0].merchantId}}'>
-        <div class="content" >
-          <div class="time">
-            <span class="date fl">{{orders[0].order[i].transTm}}</span>
-            <span class="price fr">￥{{orders[0].order[i].amt}}</span>
+      {{each orders v i}}
+      <div class="bill_list" data-order='{{orders[0].order[i].orderNo}}' data-card='{{orders[0].cardNo}}' data-merchant='{{orders[0].merchantId}}'>
+          <div class="content" >
+            <div class="time">
+              <span class="date fl">{{orders[0].order[i].transTm}}</span>
+              <span class="price fr">￥{{orders[0].order[i].amt}}</span>
+            </div>
+            <div class="movie">
+              <span class="movie_name fl">{{orders[0].order[i].goodsName}}</span>
+              <span class="pay_bank fr">{{orders[0].cardNo}}</span>
+            </div>
           </div>
-          <div class="movie">
-            <span class="movie_name fl">{{orders[0].order[i].goodsName}}</span>
-            <span class="pay_bank fr">{{orders[0].cardNo}}</span>
-          </div>
-        </div>
-        <div class="rightArrow" ></div>
-    </div>
-      {{/each}}
+          <div class="rightArrow" ></div>
+      </div>
+        {{/each}}
     </script>
   </body>
 </html>

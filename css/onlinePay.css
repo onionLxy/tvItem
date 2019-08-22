@@ -91,13 +91,24 @@ html {
 }
 .main .card .bank_name {
   height: 0.8rem;
-  width: 40%;
+  width: 30%;
   line-height: 0.8rem;
   font-size: 0.42666667rem;
   font-weight: 700;
   position: absolute;
   top: 50%;
   left: 19%;
+  transform: translate(0, -50%);
+}
+.main .card .bank_kinds {
+  height: 0.8rem;
+  width: 20%;
+  line-height: 0.8rem;
+  font-size: 0.42666667rem;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 38%;
   transform: translate(0, -50%);
 }
 .main .card .num {
@@ -126,27 +137,24 @@ html {
   border-bottom: 1px solid #ccc;
 }
 .main .details .details_info .name {
-  width: 30% ;
+  width: 25% ;
   height: 1.44rem;
   line-height: 1.44rem;
   font-size: 0.42666667rem;
   color: #000;
-  margin-right: 0.8rem;
 }
 .main .details .details_info .model {
   width: 70% ;
-  height: 1.44rem;
-  line-height: 1.44rem;
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
   font-size: 0.42666667rem;
   color: #9E9E9E;
-  margin-right: 35%;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
-.main .details .details_info .lt {
-  width: 70% ;
-  height: 1.44rem;
-  line-height: 1.44rem;
-  font-size: 0.42666667rem;
-  color: #9E9E9E;
+.main .details .details_info:nth-child(3) {
+  border-bottom: none;
 }
 .main .tel {
   width: 90%;
@@ -158,20 +166,21 @@ html {
   background-color: #fff;
 }
 .main .tel .tel_name {
-  width: 30% ;
+  width: 25% ;
   height: 1.44rem;
   line-height: 1.44rem;
   font-size: 0.42666667rem;
   color: #000;
-  margin-right: 0.8rem;
 }
 .main .tel .tel_num {
   width: 70% ;
-  height: 1.44rem;
-  line-height: 1.44rem;
+  height: 1.28rem;
+  line-height: 1.28rem;
   font-size: 0.42666667rem;
   color: #9E9E9E;
-  margin-right: 35%;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 .main .btn {
   width: 2.13333333rem;

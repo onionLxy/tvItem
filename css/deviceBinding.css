@@ -118,6 +118,9 @@ html {
   font-size: 0.42666667rem;
   color: #9E9E9E;
 }
+.main .details .details_info:nth-child(2) {
+  border-bottom: none;
+}
 .main .confirm {
   width: 3.04rem;
   height: 0.96rem;

@@ -80,7 +80,7 @@ html {
   color: #333333;
   margin-bottom: 0;
   margin-left: 0.4rem;
-  font-family: 'PingFangSC-Medium';
+  font-family: "PingFangSC-Medium";
 }
 .main .details .center {
   display: flex;
@@ -102,7 +102,7 @@ html {
 .main .details .center .mangement_card span {
   font-size: 0.42666667rem;
   color: #333;
-  font-family: 'PingFangSC-Medium';
+  font-family: "PingFangSC-Medium";
 }
 .main .details .center .mangement_bill {
   width: 45%;
@@ -119,7 +119,7 @@ html {
   font-size: 0.42666667rem;
   text-align: center;
   color: #333;
-  font-family: 'PingFangSC-Medium';
+  font-family: "PingFangSC-Medium";
 }
 .main .details .center .mangement_info {
   width: 45%;
@@ -135,7 +135,7 @@ html {
 .main .details .center .mangement_info span {
   font-size: 0.42666667rem;
   color: #333;
-  font-family: 'PingFangSC-Medium';
+  font-family: "PingFangSC-Medium";
 }
 .main .details .center .mangement_bank {
   width: 45%;
@@ -167,7 +167,7 @@ html {
 .div-child-container .div-child {
   width: 8.56rem;
   height: 4.8rem;
-  margin: auto ;
+  margin: auto;
   background-color: #fff;
   z-index: 999;
   /*z-index要放在父元素之上 */
@@ -185,8 +185,8 @@ html {
 }
 .div-child-container .div-child .info {
   width: 50%;
-  height: 0.8rem;
-  line-height: 0.8rem;
+  height: 0.93333333rem;
+  line-height: 0.93333333rem;
   font-size: 0.42666667rem;
   color: #666;
 }

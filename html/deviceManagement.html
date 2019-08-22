@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+	  <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
@@ -22,6 +23,14 @@
   </head>
 
   <body>
+      <!-- 无数据页面 -->
+      <div class="content">
+          <div class="loading">
+              <img src="../images/icon/@2x/loading.png">
+          </div>
+          <p class="info">暂无添加的设备信息</p>
+          <button class="btn" onclick="qrCoder();">添加</button>
+      </div>
     <div class="main" id="video">
       <div class="details">
         <!-- 模板引擎渲染1 -->

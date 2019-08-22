@@ -1,0 +1,82 @@
+// 导入 base, 在 normalize 基础上进行定制, 完成对一些样式的重置
+@import 'base';
+
+// 使用的 flexible 完成的rem适配
+// 基准值 = 设计图尺寸 / 10
+@desgin: 375;
+@base: 37.5rem;
+body,html {
+    width: 100%;
+    height: 100%;
+}
+.main {
+    width: 100%;
+    height:100% ;
+    padding:80/@base 20/@base 40/@base;
+    .verification {
+        width:60%;
+        height: 50/@base;
+        font-size: 30/@base;
+        text-align: center;
+        line-height: 50/@base;
+        margin:auto auto;
+        border-radius: 10/@base;
+        margin-bottom: 20/@base;
+        background-color: #ccc;
+    }
+    .tips {
+        width:60%;
+        height: 50/@base;
+        font-size: 20/@base;
+        text-align: center;
+        line-height: 50/@base;
+        margin:auto auto;
+    }
+    .rotate {
+        width:40%;
+        height: 60/@base;
+        margin:auto auto;
+        margin-top: 70%;
+        position: relative;
+        transition: all; 
+        
+        .voice {
+            width:100%;
+            height: 40/@base;
+            font-size: 20/@base;
+            text-align: center;
+            line-height: 40/@base;
+            margin-bottom: 0;
+            border-radius: 10/@base;
+            // background-color:skyblue;
+
+        }
+        .blank {
+            width: 20/@base;
+            height: 20/@base;
+            // background-color:skyblue;
+            position: absolute;
+            left:44%;
+            top:50%;
+            transform: translateX(-50%);
+            transform: rotate(45deg);
+
+        }
+    }
+    .microphone {
+        width: 100/@base;
+        height:100/@base;
+        background-color:#ccc;
+        margin:auto auto;
+        border-radius: 50%;
+        
+        i {
+            font-size: 50/@base;
+            text-align: center;
+            line-height: 100/@base;
+            display: block;
+            margin:auto;
+        }
+    }
+    
+}

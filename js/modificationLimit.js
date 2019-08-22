@@ -25,25 +25,7 @@ $(function() {
             $('.limit').html(htmlStr); 
             token = info.tokens[0].token;
             equipmentId = info.tokens[0].equipmentId
-            //调用 将银行卡中间位转化为*号    
-            var cardNumber_str = $('.limit .limit_number')
-            $('.limit_number').each(function(i,element) {
-                cardNumber = cardNumber_str.html()
-           })
-            
 
-            var cardNumber_str = $('.limit .limit_number')             
-            cardNumber = cardNumber_str.html()
-            console.log(cardNumber);
-            
-            FormatCardNumber(cardNumber)
-            function FormatCardNumber (a) {
-                if (cardNumber && cardNumber.length > 8) {
-                     return `${cardNumber.substring(0, 4)} ${"*".repeat(cardNumber.length - 8).replace(/(.{4})/g, `$1 `)}${cardNumber.length % 4 ? " " : ""}${cardNumber.slice(-4)}`;
-                    }
-                    return cardNumber;
-                }
-                cardNumber_str.html(FormatCardNumber(cardNumber));
                 
                 // 修改限额的参数
                 var  dayLimitAmt= $('.singleDay');  

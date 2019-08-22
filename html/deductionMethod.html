@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/deductionMethod.css" th:href="@{/css/deductionMethod.css}">
-    <link rel="stylesheet" href="../lib/fa/css/font-awesome.min.css" th:href="@{/lib/fa/css/font-awesome.min.css}">
-    <link rel="stylesheet" href="../lib/mui/css/mui.min.css" th:href="@{/lib/mui/css/mui.min.css}">
-    <title>扣款渠道</title>
-    <script src="../lib/flexible/flexible.js" th:src="@{/lib/flexible/flexible.js}"></script>
-    <script src="../lib/jquery-1.12.4.js" th:src="@{/lib/jquery-1.12.4.js}"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="../css/deductionMethod.css"
+      th:href="@{/css/deductionMethod.css}"
+    />
+    <link
+      rel="stylesheet"
+      href="../lib/fa/css/font-awesome.min.css"
+      th:href="@{/lib/fa/css/font-awesome.min.css}"
+    />
+    <link
+      rel="stylesheet"
+      href="../lib/mui/css/mui.min.css"
+      th:href="@{/lib/mui/css/mui.min.css}"
+    />
+    <title>添加支付账户</title>
+    <script
+      src="../lib/flexible/flexible.js"
+      th:src="@{/lib/flexible/flexible.js}"
+    ></script>
+    <script
+      src="../lib/jquery-1.12.4.js"
+      th:src="@{/lib/jquery-1.12.4.js}"
+    ></script>
     <script src="../js/common.js" th:src="@{/js/common.js}"></script>
-    <script src="../lib/bootstrap/js/bootstrap.js" th:src="@{/lib/bootstrap/js/bootstrap.js}"></script>
-    <script src="../lib/artTemplate/template-web.js" th:src="@{/lib/artTemplate/template-web.js}"></script>
-    <script src="../js/deductionMethod.js" th:src="@{/js/deductionMethod.js}"></script>
-</head>
-<body>
+    <script
+      src="../lib/bootstrap/js/bootstrap.js"
+      th:src="@{/lib/bootstrap/js/bootstrap.js}"
+    ></script>
+    <script
+      src="../lib/artTemplate/template-web.js"
+      th:src="@{/lib/artTemplate/template-web.js}"
+    ></script>
+    <script
+      src="../js/deductionMethod.js"
+      th:src="@{/js/deductionMethod.js}"
+    ></script>
+  </head>
+  <body>
     <div class="content">
-        <div class="deduction" th:each="obj : ${method}">
-            <div class="pic"><img src="../images/icon/@2x/手环@2x.png" th:src="@{/images/icon/@2x/手环@2x.png}"></div>
-            <span class="info" th:text="${obj.name}">银行卡先买后付</span>
-            <div class="open">
-                <span>去开通</span>
-                <i class='fa fa-angle-right'></i>
-            </div>
+      <div class="deduction" th:each="obj : ${method}" th:url="${obj.url}">
+        <div class="pic">
+          <img
+            src="../images/icon/@2x/云闪付.png"
+            th:src="@{{iconFile}(iconFile=${obj.iconFile})}"
+          />
         </div>
-    </div>
-
-     <!-- 模态框 -->
-     <div class="div-container" id="div-container" style="display:none;">
-        <div class="div-child-container">
-            <div class="div-child">
-                <p>去开通</p>
-                <p>银行卡管理</p>
-            </div>
-            <div class="div-child">
-                <p>取消</p>
-            </div>
+        <span class="info" th:text="${obj.name}">绑定云闪付账户</span>
+        <div class="open">
+          <span>去开通</span>
+          <i class="fa fa-angle-right"></i>
         </div>
+      </div>
     </div>
-</body>
+    <!-- 模态框 -->
+    <div class="div-container" id="div-container" style="display:none;">
+      <div class="div-child-container">
+        <div class="div-child">
+          <p>去开通</p>
+          <p>银行卡管理</p>
+        </div>
+        <div class="div-child">
+          <p>取消</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
